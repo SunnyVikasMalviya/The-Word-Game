@@ -30,14 +30,14 @@ if __name__ == '__main__':
     vowels = ['A', 'E', 'I', 'O', 'U']
     
     players_score = {}
-    
+    		 
     #Function to calculate the score of a player for a word that just got entered
     def scoring(word):
         total = 0
         for ch in word:
             total += score[ch]
         #The escape sequence \033[36m is used for coloring text into darkcyan
-        print("\033[36m",total,"\033[0m")
+        print(" Points Earned : \033[36m",total,"\033[0m")
         return total
     
     
@@ -102,18 +102,18 @@ if __name__ == '__main__':
         compare the strings in the text file and the string that was entered. """
         ew = entered_word + ('\n')
         file_word=first_letter
-        print(entered_word)
+        #print(entered_word)
         while file_word!="": 
             #print(file_word, " %d " % (x)),
             x += 1
             file_word = str(ft.readline())
             #if file_word == entered_word :
             if file_word == ew :        
-                print("Word found!")
+                print("Word found!",)
                 ft.close()
                 return entered_word
         else :
-            print("Word not found!")
+            print("Word not found!",)
             ft.close()
             return ""
         #print(file_words)
@@ -147,7 +147,7 @@ if __name__ == '__main__':
         k = list(players_score.keys())
         winner =k[v.index(max(v))] 
         print("One last thing. In case of more than one players having the" \
-              "highest score, only one lucky player gets to win.")
+              " highest score, only one lucky player gets to win.")
         print("And the winner is ...(Suspence)... Player %d" % (winner+1))
         out()
             
@@ -198,7 +198,7 @@ if __name__ == '__main__':
                 #random_letter_produced.append('n')
                 entered_word = validate_entered_word(random_letter_produced)
                 players_score[y] += scoring(entered_word)
-                print(players_score[y])
+                #print(players_score[y])
                 #players_score
         display_results(num_of_players)
         
