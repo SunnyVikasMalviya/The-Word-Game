@@ -20,15 +20,17 @@ if __name__ == '__main__':
     
     
     #Dictionary listing the points of all the letters 
-    score = {"a": 1, "c": 3, "b": 3, "e": 1, "d": 2, "g": 2, "f": 4, "i": 1, \
-    		 "h": 4, "k": 5, "j": 8, "m": 3, "l": 1, "o": 1, "n": 1, "q": 10, \
-    		 "p": 3, "s": 1, "r": 1, "u": 1, "t": 1, "w": 4, "v": 4, "y": 4,  \
-    		 "x": 8, "z": 10}
+    score = {"a": 5, "c": 25, "b": 44, "e": 2, "d": 16, "g": 40, "f": 30, "i": 5,\
+    		 "h": 8, "k": 64, "j": 90, "m": 25, "l": 17, "o": 5, "n": 5, "q": 80, \
+    		 "p": 40, "s": 5, "r": 12, "u": 20, "t": 4, "w": 34, "v": 62, "y": 34,\
+    		 "x": 90, "z": 120}
+    
     consonents = ['B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P',\
                   'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z']
     vowels = ['A', 'E', 'I', 'O', 'U']
+    
     players_score = {}
-    		 
+    
     #Function to calculate the score of a player for a word that just got entered
     def scoring(word):
         total = 0
@@ -187,7 +189,7 @@ if __name__ == '__main__':
         for x in range(0, num_of_players):
             players_score[x] = 0  
         print("\nLets start then")
-        for x in range(1, 4):
+        for x in range(1, 6):
             print("\033[4mRound ",str(x),"\033[0m")
             for y in range(0, num_of_players):            
                 print("Player %d to play" % (y+1))
