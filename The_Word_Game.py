@@ -1,4 +1,11 @@
     #Jumbled Words Game
+    
+#Okay, so I already knew that because of the 'if' line below, no one will be able to \
+#copy my code. Thats why I wanted that line in my code. But I realised that because \
+#of this line I am not able to use the functions from this program by System modules\
+#method, which should have disappointed me but it actually made me happy that not only\
+#no one will be able to use my code, they will not even be able to import my libraries\
+#from my files which I think is an added security
 if __name__ == '__main__':    
     #Simple rules 
     #Maximum 5 and minimum 2 players can play the game at a time
