@@ -76,8 +76,8 @@ if __name__ == '__main__':
     #Funtion to take input and validate the word
     def validate_entered_word(random_letter_produced):
         #take input
-        entered_word = input("Make a word from the given letters:")
-        entered_word.lower()    
+        entered_word1 = input("Make a word from the given letters:")
+        entered_word = entered_word1.lower()    
         #check the size
         if len(entered_word) not in range(3,21):
             print("Word should be between 3 to 20 letters long. Zero Points.")
